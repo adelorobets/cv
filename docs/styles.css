@@ -3,24 +3,37 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4; /* Серый фон */
 }
 
+/* Синяя полоса */
 .header {
     background-color: #003366;
     color: white;
-    text-align: center;
-    padding: 20px 0;
+    text-align: left; /* Выравнивание текста по левой стороне */
+    padding: 30px 20px; /* Добавлен отступ сверху */
 }
 
+.header h1, .header h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+/* Контент и фон */
 .content {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 30px;
+    background-color: #e0e0e0; /* Серый фон под текстом */
+    padding: 20px;
+    border-radius: 8px;
 }
 
 /* Левый блок с текстом */
 .left-side {
-    flex: 0 0 60%; /* Размер блока с текстом */
+    flex: 0 0 60%;
+    padding-right: 20px; /* Отступ справа от текста */
 }
 
 /* Правый блок с фотографией */
@@ -32,22 +45,24 @@ body {
 }
 
 .profile-image {
-    width: 150px; /* Размер изображения */
+    width: 150px;
     height: 150px;
     border-radius: 50%; /* Круглая форма */
+    margin-bottom: 20px; /* Отступ снизу */
 }
 
-/* Заголовки и текст */
+/* Заголовки */
 h1, h2, h3 {
     margin: 0;
     padding: 10px;
-    font-weight: normal; /* Обычный шрифт для заголовков */
+    font-weight: normal;
 }
 
 h3 {
     margin-top: 20px;
 }
 
+/* Стили для списка */
 ul {
     margin: 0;
     padding-left: 20px;
@@ -56,4 +71,14 @@ ul {
 a {
     color: white;
     text-decoration: none;
+}
+
+/* Контакты и ссылки */
+.contact-link {
+    color: #003366; /* Темно-синий цвет */
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
 }
