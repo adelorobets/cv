@@ -10,8 +10,8 @@ body {
 .header {
     background-color: #008B8B;
     color: white;
-    text-align: left; /* Выравнивание текста по левой стороне */
-    padding: 40px 30px; /* Добавлен отступ сверху */
+    text-align: left;
+    padding: 40px 30px;
 }
 
 .header h1, .header h2 {
@@ -20,36 +20,30 @@ body {
     font-weight: bold;
 }
 
-/* Контент и фон */
+/* Контент */
 .content {
     display: flex;
-    flex-direction: column; /* Размещаем содержимое в колонку */
+    flex-direction: column; /* Контент в колонку */
     align-items: flex-start; /* Выравниваем влево */
     margin: 30px;
-    background-color: #FFFFFF; /* Серый фон под текстом */
+    background-color: #FFFFFF;
     padding: 20px;
     border-radius: 8px;
 }
 
-/* Блок с фотографией */
-.profile-container {
+/* Левая колонка с текстом и фото */
+.left-column {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Выравниваем фото слева */
-    margin-bottom: 20px;
+    align-items: flex-start; /* Выравниваем контент влево */
 }
 
+/* Фото */
 .profile-image {
     width: 170px;
     height: 170px;
-    border-radius: 50%; /* Круглая форма */
-    margin-top: 10px; /* Отступ сверху */
-}
-
-/* Блок с текстом */
-.left-side {
-    width: 100%;
-    text-align: left;
+    border-radius: 50%;
+    margin-bottom: 20px; /* Отступ снизу перед текстом */
 }
 
 /* Заголовки */
@@ -57,10 +51,6 @@ h1, h2, h3 {
     margin: 0;
     padding: 10px 0;
     font-weight: bold;
-}
-
-h3 {
-    margin-top: 10px;
 }
 
 /* Стили для списка */
@@ -72,7 +62,7 @@ ul {
 
 /* Контакты */
 .contact-link {
-    color: #0000FF; /* Темно-синий цвет */
+    color: #0000FF;
     text-decoration: none;
 }
 
