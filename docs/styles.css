@@ -63,4 +63,19 @@ h3 {
     margin-top: 10px;
 }
 
-/* Стили для
+/* Стили для списка */
+ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+/* Контакты */
+.contact-link {
+    color: #0000FF; /* Темно-синий цвет */
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
