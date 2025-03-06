@@ -21,7 +21,7 @@ body::before, body::after {
     top: 0;
     bottom: 0;
     width: 10%; /* Sidebar width */
-    background-color: rgba(0, 123, 255, 0.3); /* Lighter blue */
+    background-color: rgba(0, 123, 255, 0.15); /* Even lighter blue */
 }
 
 body::before {
@@ -55,11 +55,13 @@ h2 {
     text-align: left; /* Left-align section headers */
     margin-top: 30px;
     padding-left: 20px; /* Left padding for alignment */
+    width: calc(100% - 20px); /* Adjust width to avoid overlapping sidebars */
 }
 
 .blue-bar h3 {
     font-size: 1.5rem;
     margin: 0;
+    font-weight: normal; /* Remove bold */
 }
 
 /* Content sections */
@@ -87,4 +89,31 @@ footer {
 
 .footer-contacts {
     padding-left: 20px;
+}
+
+.email {
+    color: white;
+    text-decoration: none;
+}
+
+.email:hover {
+    text-decoration: underline;
+}
+
+/* WhatsApp link and icon */
+.whatsapp-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.whatsapp-link:hover {
+    text-decoration: underline;
+}
+
+.whatsapp-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
