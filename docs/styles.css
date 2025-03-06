@@ -52,7 +52,7 @@ body {
     display: flex;
     justify-content: flex-end; /* Размещаем изображение справа */
     align-items: flex-start; /* Выравниваем по верхнему краю */
-    padding: 20px; /* Добавляем отступ */
+    padding: 50px; /* Добавляем отступ */
 }
 
 .header-image {
