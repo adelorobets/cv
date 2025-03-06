@@ -3,15 +3,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Серый фон */
+    background-color: #B0E0E6; /* Серый фон */
 }
 
 /* Синяя полоса */
 .header {
-    background-color: #003366;
+    background-color: #008B8B;
     color: white;
     text-align: left; /* Выравнивание текста по левой стороне */
-    padding: 30px 20px; /* Добавлен отступ сверху */
+    padding: 40px 30px; /* Добавлен отступ сверху */
 }
 
 .header h1, .header h2 {
@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 30px;
-    background-color: #e0e0e0; /* Серый фон под текстом */
+    background-color: #B0E0E6; /* Серый фон под текстом */
     padding: 20px;
     border-radius: 8px;
 }
@@ -38,7 +38,7 @@ body {
 
 /* Правый блок с фотографией */
 .right-side {
-    flex: 0 0 50%; /* Размер блока с фото */
+    flex: 0 0 60%; /* Размер блока с фото */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%; /* Круглая форма */
-    margin-bottom: 30px; /* Отступ снизу */
+    margin-bottom: 20px; /* Отступ снизу */
 }
 
 /* Заголовки */
