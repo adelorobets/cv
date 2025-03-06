@@ -52,11 +52,11 @@ body {
     display: flex;
     justify-content: flex-end; /* Размещаем изображение справа */
     align-items: flex-start; /* Выравниваем по верхнему краю */
-    padding: 50px; /* Добавляем отступ */
+    padding: 100px; /* Добавляем отступ */
 }
 
 .header-image {
-    width: 1800px; /* Измени размер по необходимости */
+    width: 1000px; /* Измени размер по необходимости */
     height: auto;
 }
 
