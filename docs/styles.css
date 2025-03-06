@@ -12,12 +12,28 @@ body {
     color: white;
     text-align: left; /* Выравнивание текста по левой стороне */
     padding: 40px 30px; /* Добавлен отступ сверху */
+    position: relative;
 }
 
 .header h1, .header h2 {
     margin: 0;
     padding: 0;
     font-weight: bold;
+}
+
+/* Контейнер для фото под заголовком */
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Отступ от заголовка */
+    margin-bottom: 20px; /* Отступ перед контентом */
+}
+
+.profile-image {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%; /* Круглая форма */
 }
 
 /* Контент и фон */
@@ -34,24 +50,8 @@ body {
 .left-side {
     flex: 0 0 60%;
     padding-right: 10px; /* Отступ справа от текста */
-    
-    white-space: nowrap; /* Во всех случаях переносы строк запрещены. */
-    display: inline-block; /* Элементы подчинены линейной логике, независимо от ширины экрана. */
-}
-
-/* Правый блок с фотографией */
-.left-side {
-    flex: 0 0 60%; /* Размер блока с фото */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile-image {
-    width: 170px;
-    height: 170px;
-    border-radius: 60%; /* Круглая форма */
-    margin-bottom: 20px; /* Отступ снизу */
+    white-space: nowrap;
+    display: inline-block;
 }
 
 /* Заголовки */
