@@ -14,14 +14,14 @@ body {
     position: relative; /* Needed for absolute positioning of sidebars */
 }
 
-/* Adding light blue sidebars */
+/* Adding even lighter blue sidebars */
 body::before, body::after {
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
     width: 10%; /* Sidebar width */
-    background-color: rgba(0, 123, 255, 0.15); /* Even lighter blue */
+    background-color: rgba(0, 123, 255, 0.1); /* Even lighter blue (50% lighter) */
 }
 
 body::before {
@@ -55,7 +55,9 @@ h2 {
     text-align: left; /* Left-align section headers */
     margin-top: 30px;
     padding-left: 20px; /* Left padding for alignment */
-    width: calc(100% - 20px); /* Adjust width to avoid overlapping sidebars */
+    width: calc(100% - 40px); /* Adjust width to avoid overlapping sidebars */
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .blue-bar h3 {
