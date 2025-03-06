@@ -47,6 +47,22 @@ body {
     margin-bottom: 20px; /* Отступ снизу */
 }
 
+.right-side {
+    flex: 0 0 40%; /* Уменьшаем ширину блока справа */
+    display: flex;
+    justify-content: flex-end; /* Размещаем изображение справа */
+    align-items: flex-start; /* Выравниваем по верхнему краю */
+    padding: 20px; /* Добавляем отступ */
+}
+
+.header-image {
+    width: 150px; /* Измени размер по необходимости */
+    height: auto;
+}
+
+
+
+
 /* Заголовки */
 h1, h2, h3 {
     margin: 0;
