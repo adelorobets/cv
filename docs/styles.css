@@ -18,29 +18,30 @@ body {
     margin: 20px;
 }
 
-/* Левый блок с фотографией */
+/* Левый блок с текстом */
 .left-side {
-    flex: 0 0 30%; /* Размер блока */
+    flex: 0 0 60%; /* Размер блока с текстом */
+}
+
+/* Правый блок с фотографией */
+.right-side {
+    flex: 0 0 35%; /* Размер блока с фото */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .profile-image {
-    width: 120px; /* Размер изображения */
-    height: 120px;
+    width: 150px; /* Размер изображения */
+    height: 150px;
     border-radius: 50%; /* Круглая форма */
-}
-
-/* Правый блок с текстом */
-.right-side {
-    flex: 0 0 65%; /* Размер блока */
 }
 
 /* Заголовки и текст */
 h1, h2, h3 {
     margin: 0;
     padding: 10px;
+    font-weight: normal; /* Обычный шрифт для заголовков */
 }
 
 h3 {
