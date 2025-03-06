@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 30px;
-    background-color: #DCDCDC; /* Серый фон под текстом */
+    background-color: #FFFFFF; /* Серый фон под текстом */
     padding: 20px;
     border-radius: 8px;
 }
@@ -76,7 +76,7 @@ a {
 
 /* Контакты и ссылки */
 .contact-link {
-    color: #003366; /* Темно-синий цвет */
+    color: #0000FF; /* Темно-синий цвет */
     text-decoration: none;
 }
 
