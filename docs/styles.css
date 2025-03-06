@@ -1,60 +1,67 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset default styles */
+body, h1, h2, h3, h4, p, ul {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
 }
 
+/* General page styling */
+body {
+    line-height: 1.5; /* Uniform line height */
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0 20px;
+}
+
+/* Header */
 header {
-    background-color: #2a3d6d;
+    text-align: left; /* Left-align header text */
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #555;
+}
+
+/* Blue bar for section headers */
+.blue-bar {
+    background-color: #007bff;
     color: white;
-    text-align: center;
-    padding: 20px;
+    padding: 10px 0;
+    text-align: left; /* Left-align section headers */
+    margin-top: 30px;
+    padding-left: 20px; /* Left padding for alignment */
 }
 
-header h1 {
+.blue-bar h3 {
+    font-size: 1.5rem;
     margin: 0;
-    font-size: 2.5em;
 }
 
-header h2 {
-    margin: 5px 0;
-    font-size: 1.5em;
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h3 {
-    color: #2a3d6d;
+/* Content sections */
+.content {
+    margin-top: 10px;
+    padding-left: 20px; /* Align content with section headers */
 }
 
 ul {
     list-style-type: none;
-    padding-left: 0;
 }
 
 ul li {
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
 
+/* Footer */
 footer {
+    margin-top: 50px;
     text-align: center;
-    padding: 10px;
-    background-color: #2a3d6d;
+    padding: 20px 0;
+    background-color: #007bff;
     color: white;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
