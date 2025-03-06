@@ -47,18 +47,13 @@ body {
     margin-bottom: 20px; /* Отступ снизу */
 }
 
-.right-side {
-    flex: 0 0 40%; /* Уменьшаем ширину блока справа */
-    display: flex;
-    justify-content: flex-end; /* Размещаем изображение справа */
-    align-items: flex-start; /* Выравниваем по верхнему краю */
-    padding: 100px; /* Добавляем отступ */
+.personal-image {
+    display: block; /* Делаем изображение блочным */
+    width: 250px; /* Задаем ширину (изменяй по необходимости) */
+    height: auto; /* Сохраняем пропорции */
+    margin-top: 15px; /* Добавляем отступ сверху */
 }
 
-.header-image {
-    width: 250px; /* Измени размер по необходимости */
-    height: auto;
-}
 
 /* Заголовки */
 h1, h2, h3 {
