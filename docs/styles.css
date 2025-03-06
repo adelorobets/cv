@@ -38,7 +38,7 @@ body {
 
 /* Правый блок с фотографией */
 .right-side {
-    flex: 0 0 35%; /* Размер блока с фото */
+    flex: 0 0 50%; /* Размер блока с фото */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,14 +48,14 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%; /* Круглая форма */
-    margin-bottom: 20px; /* Отступ снизу */
+    margin-bottom: 30px; /* Отступ снизу */
 }
 
 /* Заголовки */
 h1, h2, h3 {
     margin: 0;
     padding: 10px;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 h3 {
@@ -66,6 +66,7 @@ h3 {
 ul {
     margin: 0;
     padding-left: 20px;
+    list-style-type: none;
 }
 
 a {
