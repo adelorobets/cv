@@ -40,7 +40,7 @@ body {
 }
 
 /* Правый блок с фотографией */
-.right-side {
+.left-side {
     flex: 0 0 60%; /* Размер блока с фото */
     display: flex;
     justify-content: center;
@@ -48,9 +48,9 @@ body {
 }
 
 .profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Круглая форма */
+    width: 170px;
+    height: 170px;
+    border-radius: 60%; /* Круглая форма */
     margin-bottom: 20px; /* Отступ снизу */
 }
 
