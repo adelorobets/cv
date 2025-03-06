@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #B0E0E6; /* Серый фон */
+    box-sizing: border-box; /* Учитывает padding и border в ширине элементов */
 }
 
 /* Синяя полоса */
@@ -29,6 +30,8 @@ body {
     background-color: #FFFFFF;
     padding: 20px;
     border-radius: 8px;
+    max-width: 100%; /* Контент не выходит за ширину экрана */
+    box-sizing: border-box; /* Учитываем padding в ширине */
 }
 
 /* Левая колонка с текстом и фото */
@@ -36,13 +39,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Выравниваем контент влево */
-    display: inline-block; /* Элементы подчинены линейной логике, независимо от ширины экрана. */
+    width: 100%; /* Колонка адаптируется под ширину */
 }
 
 /* Фото */
 .profile-image {
-    width: 170px;   /* Ширина */
-    height: 170px;  /* Высота (должна быть равна ширине для квадрата) */
+    width: 100%; /* Изображение адаптируется под ширину */
+    max-width: 170px; /* Ограничение максимальной ширины */
+    height: auto; /* Сохраняем пропорции */
     border-radius: 0; /* Убираем округление */
     object-fit: cover; /* Обрезает фото, чтобы оно полностью заполнило квадрат */
     margin-bottom: 20px; /* Отступ снизу */
@@ -50,11 +54,11 @@ body {
 
 .personal-image {
     display: block; /* Делаем изображение блочным */
-    width: 500px; /* Задаем ширину (изменяй по необходимости) */
+    width: 100%; /* Изображение адаптируется под ширину */
+    max-width: 500px; /* Ограничение максимальной ширины */
     height: auto; /* Сохраняем пропорции */
     margin-top: 15px; /* Добавляем отступ сверху */
 }
-
 
 /* Заголовки */
 h1, h2, h3 {
@@ -68,7 +72,6 @@ ul {
     margin: 0;
     padding-left: 20px;
     list-style-type: none;
-   
 }
 
 /* Контакты */
@@ -88,4 +91,3 @@ ul {
     vertical-align: middle; /* Выравнивание по центру строки */
     margin-right: 8px; /* Отступ справа от ссылки */
 }
-
