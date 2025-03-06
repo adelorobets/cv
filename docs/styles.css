@@ -69,3 +69,12 @@ ul {
 .contact-link:hover {
     text-decoration: underline;
 }
+
+/* Стили для иконки WhatsApp */
+.whatsapp-icon {
+    width: 20px;  /* Размер иконки */
+    height: 20px;
+    vertical-align: middle; /* Выравнивание по центру строки */
+    margin-right: 8px; /* Отступ справа от ссылки */
+}
+
