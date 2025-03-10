@@ -4,61 +4,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: #B0E0E6; /* Голубой фон */
-    box-sizing: border-box;
-}
-
-/* Синяя полоса */
-.header {
-    background-color: #008B8B;
-    color: white;
-    text-align: left;
-    padding: 40px 30px;
-}
-
-.header h1, .header h2 {
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-}
-
-/* Контейнер для ВСЕГО контента */
-.container {
     display: flex;
-    justify-content: center; /* Центрируем весь контент */
-    padding: 30px;
+    justify-content: center; /* Центрируем белый фон */
+    align-items: center;
+    min-height: 100vh; /* Растягиваем фон на всю высоту */
 }
 
-/* Белый блок под всем текстом */
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Выровняли весь контент по левому краю */
-    background-color: #FFFFFF; /* Белый фон */
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 900px; /* Чтобы контент не растягивался слишком широко */
-    width: 100%; /* Растягиваем блок по всей ширине */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для красивого эффекта */
-}
-
-/* Фото */
-.profile-image {
-    width: 170px;
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-/* Текст и фото */
-.left-column {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Выровняли весь текст по левому краю */
-    width: 100%;
-}
-
-/* Круги справа (в ряд, но не на тексте) */
+/* Круги справа (в ряд) */
 .right-column {
     display: flex;
     gap: 15px;
@@ -78,28 +30,51 @@ body {
     justify-content: center;
 }
 
-/* Контакты */
-.contact-link {
-    color: #0000FF;
-    text-decoration: none;
+
+/* Контейнер для ВСЕГО контента (Белый фон) */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выровняли весь контент по левому краю */
+    background-color: #FFFFFF; /* Белый фон */
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 900px; /* Чтобы контент не растягивался слишком широко */
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для красоты */
 }
 
-.contact-link:hover {
-    text-decoration: underline;
+/* Синяя полоса */
+.header {
+    background-color: #008B8B;
+    color: white;
+    text-align: left;
+    padding: 40px 30px;
+    width: 100%;
 }
 
-/* Иконка WhatsApp */
-.whatsapp-icon {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 8px;
+/* Фото */
+.profile-image {
+    width: 170px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
+
+/* Левая колонка с текстом и фото */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выровняли весь текст по левому краю */
+    width: 100%;
+}
+
 
 /* Адаптивность */
 @media (max-width: 768px) {
-    .container {
-        padding: 15px;
+    .content {
+        padding: 20px;
     }
 
     .profile-image {
