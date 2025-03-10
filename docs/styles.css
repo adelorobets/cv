@@ -21,43 +21,44 @@ body {
     font-weight: bold;
 }
 
-/* Контент */
+/* Контейнер контента */
 .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; /* Дает адаптацию под мобильные устройства */
-    margin: 30px;
-    background-color: #FFFFFF;
+    flex-wrap: wrap;
+    margin: 30px auto; /* Центрируем */
+    background-color: #FFFFFF; /* Вернули белый фон */
     padding: 20px;
     border-radius: 8px;
-    max-width: 100%;
-    box-sizing: border-box;
+    max-width: 900px; /* Чтобы контент не растягивался слишком широко */
+   
 }
 
 /* Левая колонка с текстом и фото */
 .left-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 50%; /* Уменьшаем ширину, чтобы справа поместились круги */
+    align-items: flex-start;
+    width: 60%;
 }
 
 /* Фото */
 .profile-image {
     width: 170px;
     height: auto;
-    border-radius: 50%; /* Делаем фото круглым */
+    border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
 }
 
-/* Круги справа */
+/* Круги справа в ряд */
 .right-column {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 35%;
 }
 
 /* Стили для кругов */
@@ -92,7 +93,7 @@ body {
     text-decoration: underline;
 }
 
-/* Стили для иконки WhatsApp */
+/* Иконка WhatsApp */
 .whatsapp-icon {
     width: 20px;
     height: 20px;
@@ -100,15 +101,21 @@ body {
     margin-right: 8px;
 }
 
-/* Делаем адаптивный дизайн */
+/* Адаптивность */
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
         align-items: center;
     }
 
-    .left-column {
+    .left-column, .right-column {
         width: 100%;
+        text-align: center;
+    }
+
+    .right-column {
+        justify-content: center;
+        margin-top: 20px;
     }
 
     .profile-image {
