@@ -85,13 +85,8 @@ body {
     }
 
     .profile-image {
-        width: 140px;
+        width: 50px;
     }
-
-    .responsive-img {
-        width: 100%;
-        height: auto;  /* Сохраняет пропорции изображения */
-   }
 
 
     .right-column {
