@@ -21,26 +21,24 @@ body {
     font-weight: bold;
 }
 
-/* Контейнер контента */
-.content {
+/* Контейнер для ВСЕГО контента */
+.container {
     display: flex;
-    flex-direction: column; /* Все элементы идут в колонку */
-    align-items: flex-start; /* Выровняли весь контент по левой стороне */
-    justify-content: flex-start;
-    margin: 30px auto; /* Центрируем */
-    background-color: #FFFFFF; /* Вернули белый фон */
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 900px; /* Чтобы контент не растягивался слишком широко */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавим легкую тень */
+    justify-content: center; /* Центрируем весь контент */
+    padding: 30px;
 }
 
-/* Левая колонка с текстом и фото */
-.left-column {
+/* Белый блок под всем текстом */
+.content {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Выровняли весь контент по левому краю */
-    width: 100%;
+    background-color: #FFFFFF; /* Белый фон */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px; /* Чтобы контент не растягивался слишком широко */
+    width: 100%; /* Растягиваем блок по всей ширине */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для красивого эффекта */
 }
 
 /* Фото */
@@ -52,13 +50,21 @@ body {
     margin-bottom: 20px;
 }
 
-/* Круги справа в РЯД, но под текстом */
+/* Текст и фото */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выровняли весь текст по левому краю */
+    width: 100%;
+}
+
+/* Круги справа (в ряд, но не на тексте) */
 .right-column {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-    justify-content: flex-start; /* Выровняли круги по левому краю */
-    margin-top: 20px; /* Отступ от текста */
+    justify-content: flex-start;
+    margin-top: 20px;
 }
 
 /* Стили для кругов */
@@ -70,17 +76,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/* Кнопка "Портфолио" */
-.portfolio {
-    background-color: #17a2b8;
-}
-
-.portfolio a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 /* Контакты */
@@ -103,7 +98,7 @@ body {
 
 /* Адаптивность */
 @media (max-width: 768px) {
-    .content {
+    .container {
         padding: 15px;
     }
 
