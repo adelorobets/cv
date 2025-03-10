@@ -44,6 +44,13 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для красоты */
 }
 
+.no-dots {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+
 /* Синяя полоса */
 .header {
     background-color: #008B8B;
