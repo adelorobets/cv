@@ -26,3 +26,92 @@ body {
     display: flex;
     flex-direction: column; /* Все элементы идут в колонку */
     align-items: flex-start; /* Выровняли весь контент по левой стороне */
+    justify-content: flex-start;
+    margin: 30px auto; /* Центрируем */
+    background-color: #FFFFFF; /* Вернули белый фон */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px; /* Чтобы контент не растягивался слишком широко */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавим легкую тень */
+}
+
+/* Левая колонка с текстом и фото */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выровняли весь контент по левому краю */
+    width: 100%;
+}
+
+/* Фото */
+.profile-image {
+    width: 170px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Круги справа в РЯД, но под текстом */
+.right-column {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Выровняли круги по левому краю */
+    margin-top: 20px; /* Отступ от текста */
+}
+
+/* Стили для кругов */
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Кнопка "Портфолио" */
+.portfolio {
+    background-color: #17a2b8;
+}
+
+.portfolio a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Контакты */
+.contact-link {
+    color: #0000FF;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+/* Иконка WhatsApp */
+.whatsapp-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+    }
+
+    .profile-image {
+        width: 140px;
+    }
+
+    .right-column {
+        justify-content: flex-start;
+    }
+}
