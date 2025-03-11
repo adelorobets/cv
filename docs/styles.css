@@ -46,7 +46,7 @@ body {
 
 .personal-image {
     width: 10cm; /* Ширина 3 см */
-    height: 3cm; /* Высота 3 см */
+    height: 1cm; /* Высота 3 см */
     object-fit: cover; /* Обрезка, чтобы изображение не искажалось */
     display: block;
     margin-top: 10px;
