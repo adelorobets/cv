@@ -36,8 +36,8 @@ body {
 
 /* Фото */
 .profile-image {
-    width: 3cm;
-    height: 3cm;
+    width: 5cm;
+    height: 5cm;
     border-radius: 50%;
     object-fit: cover;
     display: block;
@@ -65,7 +65,7 @@ body {
 .circle {
     width: 80px;
     height: 80px;
-    background-color: #B0E0E6;
+    background-color: #008B8B;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -86,8 +86,8 @@ ul {
 
 /* WhatsApp иконка (уменьшенный размер) */
 .whatsapp-icon {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     vertical-align: middle;
     margin-right: 5px;
 }
