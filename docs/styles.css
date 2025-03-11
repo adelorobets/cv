@@ -123,4 +123,68 @@ ul {
         width: 2.5cm;
         height: 2.5cm;
     }
+
+/* Стили для страницы Portfolio */
+#portfolio-page {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    border-radius: 8px;
+}
+
+#portfolio-page h1, #portfolio-page h2 {
+    color: #008B8B;
+}
+
+/* Стили для папок */
+#portfolio-page .folder {
+    background-color: #B0E0E6;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#portfolio-page .folder-name {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    text-align: left;
+}
+
+#portfolio-page .folder-links {
+    list-style-type: none;
+    padding: 0;
+    display: none; /* Скрыть по умолчанию */
+}
+
+#portfolio-page .folder-links li {
+    padding-left: 20px;
+}
+
+#portfolio-page .folder-links a {
+    color: #008B8B;
+    text-decoration: none;
+}
+
+#portfolio-page .folder-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+#portfolio-page footer p {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+#portfolio-page footer a {
+    color: #008B8B;
+    text-decoration: none;
+}
+
+#portfolio-page footer a:hover {
+    text-decoration: underline;
+}
+    
 }
