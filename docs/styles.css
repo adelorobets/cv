@@ -17,7 +17,7 @@ body {
     background-color: #008B8B;
     color: white;
     text-align: left; /* Выравниваем заголовки слева */
-    padding: 20px;
+    padding: 0px;
     width: 100vw; /* Растянет на всю ширину экрана */
     box-sizing: border-box;
 }
