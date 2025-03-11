@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- Синяя полоса сверху -->
+    <section class="header">
         <h1>Adel Orobets - Portfolio</h1>
-    </header>
+    </section>
 
-    <!-- Уникальный контейнер для страницы Portfolio -->
+    <!-- Контейнер для страницы Portfolio -->
     <section id="portfolio-page">
         <section id="portfolio">
             <h2>My Projects</h2>
             <p>Here you can find some of my work, including test documentation, bug reports, and more.</p>
 
-            <!-- Папки -->
+            <!-- Папки с проектами -->
             <div class="folder">
                 <h3 class="folder-name" onclick="toggleFolder('folder1')">Test Documentation</h3>
                 <ul id="folder1" class="folder-links">
@@ -44,7 +45,6 @@
     <script>
         function toggleFolder(folderId) {
             var folder = document.getElementById(folderId);
-            // Переключаем отображение папки
             if (folder.style.display === "none") {
                 folder.style.display = "block";
             } else {
