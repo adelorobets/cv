@@ -124,18 +124,39 @@ ul {
         height: 2.5cm;
     }
 
-/* Стили для страницы Portfolio */
-#portfolio-page {
-    background-color: #008B8B;
-    color: white;
-    text-align: left; /* Выравниваем заголовки слева */
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1000px;
-    box-sizing: border-box;
+/* Общие стили для всех страниц (если нужно) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Серый фон */
+    margin: 0;
+    padding: 0;
 }
 
+/* Синяя полоса сверху */
+.header {
+    background-color: #008B8B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Контейнер для страницы Portfolio */
+#portfolio-page {
+    background-color: #fff; /* Белый фон для контента */
+    padding: 30px;
+    margin: 20px;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для красоты */
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Заголовки */
 #portfolio-page h1, #portfolio-page h2 {
+    text-align: left;
     color: #008B8B;
 }
 
@@ -158,7 +179,7 @@ ul {
 #portfolio-page .folder-links {
     list-style-type: none;
     padding: 0;
-    display: none; /* Скрыть по умолчанию */
+    display: none; /* Скрыто по умолчанию */
 }
 
 #portfolio-page .folder-links li {
@@ -188,5 +209,4 @@ ul {
 #portfolio-page footer a:hover {
     text-decoration: underline;
 }
-    
 }
