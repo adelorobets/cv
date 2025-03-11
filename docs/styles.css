@@ -126,11 +126,13 @@ ul {
 
 /* Стили для страницы Portfolio */
 #portfolio-page {
-    background-color: #fff;
+    background-color: #008B8B;
+    color: white;
+    text-align: left; /* Выравниваем заголовки слева */
     padding: 20px;
     margin: 0 auto;
     max-width: 1000px;
-    border-radius: 8px;
+    box-sizing: border-box;
 }
 
 #portfolio-page h1, #portfolio-page h2 {
