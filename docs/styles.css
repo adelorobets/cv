@@ -27,7 +27,7 @@ body {
     align-items: flex-start; /* Весь текст и элементы слева */
     background-color: #FFFFFF;
     border-radius: 8px;
-    width: 100%; /* Растягиваем на всю ширину */
+    width: 90%; /* Растягиваем на всю ширину */
     max-width: 2500px; /* Максимальная ширина */
     padding: 30px; /* Отступы внутри контейнера */
     box-sizing: border-box; /* Учитывать padding при расчете ширины */
@@ -69,6 +69,9 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start; /* Выравниваем круги слева */
     margin-top: 20px;
+    color: white; /* Белый цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold; /* текст жирный */
 }
 
 /* Стили для кругов */
