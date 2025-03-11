@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Adel Orobets</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .folder {
+            cursor: pointer;
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .folder:hover {
+            background-color: #e0e0e0;
+        }
+
+        .links {
+            display: none;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .links a {
+            display: block;
+            text-decoration: none;
+            color: #008B8B;
+            margin-bottom: 5px;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,11 +46,44 @@
     <section id="portfolio">
         <h2>My Projects</h2>
         <p>Here you can find some of my work, including test documentation, bug reports, and more.</p>
-        <!-- Add links to your documents or images here -->
+
+        <!-- Папка 1 -->
+        <div class="folder" onclick="toggleLinks('folder1')">
+            <h3>Test Documentation</h3>
+        </div>
+        <div id="folder1" class="links">
+            <a href="https://docs.google.com/document/d/your-doc-id" target="_blank">Test Plan</a>
+            <a href="https://docs.google.com/document/d/your-doc-id" target="_blank">Test Cases</a>
+            <a href="https://docs.google.com/document/d/your-doc-id" target="_blank">Bug Report</a>
+        </div>
+
+        <!-- Папка 2 -->
+        <div class="folder" onclick="toggleLinks('folder2')">
+            <h3>Bug Reports</h3>
+        </div>
+        <div id="folder2" class="links">
+            <a href="https://docs.google.com/document/d/your-doc-id" target="_blank">Bug Report 1</a>
+            <a href="https://docs.google.com/document/d/your-doc-id" target="_blank">Bug Report 2</a>
+        </div>
+
+        <!-- Другие папки -->
+        <!-- Добавьте новые папки и ссылки по аналогии -->
     </section>
 
     <footer>
         <p><a href="index.html">Back to Resume</a></p>
     </footer>
+
+    <script>
+        // Функция для отображения/скрытия ссылок внутри папки
+        function toggleLinks(folderId) {
+            var links = document.getElementById(folderId);
+            if (links.style.display === "none" || links.style.display === "") {
+                links.style.display = "block";
+            } else {
+                links.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
