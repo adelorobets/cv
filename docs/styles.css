@@ -46,8 +46,8 @@ body {
 }
 
 .personal-image {
-    width: 10cm; /* Ширина 3 см */
-    height: 1cm; /* Высота 3 см */
+    width: 10cm; /* Ширина */
+    height: 1cm; /* Высота */
     object-fit: cover; /* Обрезка, чтобы изображение не искажалось */
     display: block;
     margin-top: 10px;
@@ -85,7 +85,13 @@ body {
 }
 
 /* Заголовки слева */
-h1, h2, h3 {
+.header h1, .header h2 {
+    margin-left: 20px; /* Сдвигаем текст вправо */
+    text-align: left;
+    width: 100%;
+}
+
+h3 {
     text-align: left;
     width: 100%;
 }
