@@ -66,12 +66,11 @@ body {
 .right-column {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
     justify-content: flex-start; /* Выравниваем круги слева */
-    margin-top: 20px;
     color: white; /* Белый цвет текста */
     text-decoration: none; /* Убираем подчеркивание */
-    font-weight: bold; /* текст жирный */
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 /* Стили для кругов */
