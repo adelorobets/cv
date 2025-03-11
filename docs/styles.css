@@ -124,20 +124,21 @@ ul {
         height: 2.5cm;
     }
 
-/* Общие стили для всех страниц*/
+/* Общие стили для всех страниц */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Серый фон */
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
 /* Синяя полоса сверху */
 .header {
     background-color: #008B8B;
     color: white;
-    text-align: center;
+    text-align: left; /* Выравниваем заголовок по левому краю */
     padding: 20px;
+    margin: 0;
 }
 
 /* Контейнер для страницы Portfolio */
@@ -152,17 +153,17 @@ body {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    text-align: left; /* Все элементы на странице выравниваем влево */
 }
 
 /* Заголовки */
 #portfolio-page h1, #portfolio-page h2, #portfolio-page h3 {
-    text-align: left; /* Выровняли заголовки влево */
     color: #008B8B;
+    text-align: left; /* Выровняли заголовки по левому краю */
 }
 
 /* Стили для текста */
 #portfolio-page p {
-    text-align: left; /* Выровняли текст влево */
     font-size: 16px;
     color: #333;
     line-height: 1.6;
@@ -174,36 +175,21 @@ body {
     padding: 15px;
     margin: 10px 0;
     border-radius: 5px;
-    cursor: pointer;
 }
 
-#portfolio-page .folder-name {
-    font-size: 20px;
-    color: white;
+#portfolio-page .folder h3 {
     margin: 0;
-    text-align: left;
+    color: white;
 }
 
-#portfolio-page .folder-links {
-    list-style-type: none;
-    padding: 0;
-    display: none; /* Скрыто по умолчанию */
-}
-
-#portfolio-page .folder-links li {
+#portfolio-page .folder ul {
     padding-left: 20px;
 }
 
-#portfolio-page .folder-links a {
-    color: #008B8B;
-    text-decoration: none;
+#portfolio-page .folder ul li {
+    font-size: 16px;
 }
 
-#portfolio-page .folder-links a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
 #portfolio-page footer p {
     font-size: 16px;
     margin-top: 30px;
@@ -213,6 +199,11 @@ body {
     color: #008B8B;
     text-decoration: none;
 }
+
+#portfolio-page footer a:hover {
+    text-decoration: underline;
+}
+
 
 #portfolio-page footer a:hover {
     text-decoration: underline;
