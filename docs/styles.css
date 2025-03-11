@@ -124,7 +124,7 @@ ul {
         height: 2.5cm;
     }
 
-/* Общие стили для всех страниц (если нужно) */
+/* Общие стили для всех страниц*/
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4; /* Серый фон */
@@ -155,9 +155,17 @@ body {
 }
 
 /* Заголовки */
-#portfolio-page h1, #portfolio-page h2 {
-    text-align: left;
+#portfolio-page h1, #portfolio-page h2, #portfolio-page h3 {
+    text-align: left; /* Выровняли заголовки влево */
     color: #008B8B;
+}
+
+/* Стили для текста */
+#portfolio-page p {
+    text-align: left; /* Выровняли текст влево */
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Стили для папок */
@@ -209,4 +217,3 @@ body {
 #portfolio-page footer a:hover {
     text-decoration: underline;
 }
-
