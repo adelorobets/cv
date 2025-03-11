@@ -5,59 +5,33 @@ body {
     padding: 0;
     background-color: #B0E0E6; /* Голубой фон */
     display: flex;
-    justify-content: center; /* Центрируем белый фон */
+    flex-direction: column;
     align-items: center;
     min-height: 100vh; /* Растягиваем фон на всю высоту */
 }
 
-/* Круги справа (в ряд) */
-.right-column {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-top: 20px;
+/* Синяя полоса */
+.header {
+    background-color: #008B8B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
-
-/* Стили для кругов */
-.circle {
-    width: 80px;
-    height: 80px;
-    background-color: #B0E0E6;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 /* Контейнер для ВСЕГО контента (Белый фон) */
 .content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Выровняли весь контент по левому краю */
+    align-items: center;
     background-color: #FFFFFF; /* Белый фон */
     padding: 30px;
     border-radius: 8px;
     max-width: 900px; /* Чтобы контент не растягивался слишком широко */
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для красоты */
-}
-
-.no-dots {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-
-
-/* Синяя полоса */
-.header {
-    background-color: #008B8B;
-    color: white;
-    text-align: left;
-    padding: 40px 30px;
-    width: 100%;
+    margin-top: 20px;
 }
 
 /* Фото */
@@ -73,20 +47,47 @@ body {
 .left-column {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Выровняли весь текст по левому краю */
+    align-items: flex-start;
     width: 100%;
 }
 
+/* Круги справа (в ряд) */
+.right-column {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
 
+/* Стили для кругов */
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: #B0E0E6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+/* WhatsApp иконка (исправленный размер) */
+.whatsapp-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
 
+/* Убираем маркеры списка */
+.no-dots {
+    list-style-type: none;
+    padding-left: 0;
+}
 
-    .profile-image {
-        width: 50px;
-    }
-
-
-    .right-column {
-        justify-content: flex-start;
-    }
+/* Контакты */
+.contact-link {
+    text-decoration: none;
+    color: #008B8B;
+    font-weight: bold;
 }
