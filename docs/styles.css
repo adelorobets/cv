@@ -35,12 +35,13 @@ body {
 }
 
 /* Фото */
-.profile-image {
-    width: 170px;
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
+.personal-image {
+    width: 100%; /* На всю ширину контейнера */
+    height: auto; /* Сохранение пропорций */
+    display: block; /* Убирает лишние отступы */
+    margin-top: 20px; /* Отступ сверху */
+}
+
 }
 
 /* Левая колонка с текстом и фото */
