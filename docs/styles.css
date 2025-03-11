@@ -28,7 +28,7 @@ body {
     background-color: #FFFFFF;
     border-radius: 8px;
     width: 100%; /* Растягиваем на всю ширину */
-    max-width: 1200px; /* Максимальная ширина */
+    max-width: 1700px; /* Максимальная ширина */
     padding: 30px; /* Отступы внутри контейнера */
     box-sizing: border-box; /* Учитывать padding при расчете ширины */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
