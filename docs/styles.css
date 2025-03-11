@@ -86,7 +86,7 @@ body {
 
 /* Заголовки слева */
 .header h1, .header h2 {
-    margin-left: 20px; /* Сдвигаем текст вправо */
+    margin-left: 120px; /* Сдвигаем текст вправо */
     text-align: left;
     width: 100%;
 }
