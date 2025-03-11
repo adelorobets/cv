@@ -124,87 +124,106 @@ ul {
         height: 2.5cm;
     }
 
-/* Общие стили для всех страниц */
+/* Общие стили */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #B0E0E6; /* Голубой фон */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-/* Синяя полоса сверху */
+/* Синяя полоса (верхняя) */
 .header {
     background-color: #008B8B;
     color: white;
-    text-align: left; /* Выравниваем заголовок по левому краю */
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Заголовок в синей полосе */
+.header h1 {
     margin: 0;
+    padding-left: 30px; /* Сдвигаем заголовок вправо */
+    text-align: left;
 }
 
 /* Контейнер для страницы Portfolio */
 #portfolio-page {
     background-color: #fff; /* Белый фон для контента */
     padding: 30px;
-    margin: 20px;
-    max-width: 1200px;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для красоты */
-    border-radius: 8px;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%; /* Растягиваем почти на всю ширину */
+    max-width: 1200px; /* Максимальная ширина */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+    border-radius: 8px;
     text-align: left; /* Все элементы на странице выравниваем влево */
 }
 
-/* Заголовки */
-#portfolio-page h1, #portfolio-page h2, #portfolio-page h3 {
-    color: #008B8B;
-    text-align: left; /* Выровняли заголовки по левому краю */
+/* Внутренний контейнер для выравнивания контента */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравниваем элементы слева */
+    padding-left: 30px; /* Добавляем отступ слева */
 }
 
-/* Стили для текста */
-#portfolio-page p {
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
+/* Заголовки и текст */
+#portfolio-page h2, 
+#portfolio-page h3, 
+#portfolio-page p, 
+#portfolio-page ul, 
+#portfolio-page footer {
+    margin-left: 0; /* Все элементы начинаются с одной линии */
+    text-align: left;
 }
 
-/* Стили для папок */
-#portfolio-page .folder {
+/* Папки с документами */
+.folder {
     background-color: #B0E0E6;
     padding: 15px;
     margin: 10px 0;
     border-radius: 5px;
+    width: 100%;
 }
 
-#portfolio-page .folder h3 {
+.folder h3 {
     margin: 0;
     color: white;
 }
 
-#portfolio-page .folder ul {
+/* Список внутри папки */
+.folder ul {
     padding-left: 20px;
 }
 
-#portfolio-page .folder ul li {
+.folder ul li {
     font-size: 16px;
 }
 
-#portfolio-page footer p {
-    font-size: 16px;
-    margin-top: 30px;
-}
-
+/* Стили для ссылок */
 #portfolio-page footer a {
     color: #008B8B;
     text-decoration: none;
+    font-weight: bold;
 }
 
 #portfolio-page footer a:hover {
     text-decoration: underline;
 }
 
-
-#portfolio-page footer a:hover {
-    text-decoration: underline;
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header h1 {
+        padding-left: 15px;
+    }
+    
+    .container {
+        padding-left: 15px;
+    }
 }
+
