@@ -28,7 +28,7 @@ body {
     background-color: #FFFFFF;
     padding: 30px;
     border-radius: 8px;
-    max-width: 1500px;
+    max-width: 3500px;
     width: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
@@ -95,8 +95,8 @@ ul {
 
 /* WhatsApp иконка (уменьшенный размер) */
 .whatsapp-icon {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     vertical-align: middle;
     margin-right: 5px;
 }
