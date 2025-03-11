@@ -23,7 +23,7 @@ body {
 .circle {
     width: 80px;
     height: 80px;
-    background-color: lightgray;
+    background-color: #B0E0E6;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -78,11 +78,8 @@ body {
 }
 
 
-/* Адаптивность */
-@media (max-width: 768px) {
-    .content {
-        padding: 20px;
-    }
+
+
 
     .profile-image {
         width: 50px;
