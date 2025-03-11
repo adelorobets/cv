@@ -48,6 +48,8 @@ body {
     border-radius: 50%; /* Оставляем круглую форму */
     object-fit: cover; /* Обрезка, чтобы изображение не искажалось */
     margin-left: 0; /* Выровняли по левому краю */
+    display: block;
+    margin-bottom: 10px; /* Отступ перед кругами */
 }
 
 /* Для адаптивности на маленьких экранах */
@@ -56,9 +58,6 @@ body {
         width: 2.5cm; /* Уменьшаем на очень маленьких экранах */
         height: 2.5cm;
     }
-
-
-}
 
 /* Левая колонка с текстом и фото */
 .left-column {
@@ -71,9 +70,9 @@ body {
 /* Круги справа (в ряд) */
 .right-column {
     display: flex;
-    gap: 15px;
+    gap: 20px; /* Отступы между кругами */
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; /* Центрируем круги */
     margin-top: 20px;
 }
 
