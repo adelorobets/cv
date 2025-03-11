@@ -26,9 +26,11 @@ body {
     flex-direction: column;
     align-items: flex-start; /* Весь текст и элементы слева */
     background-color: #FFFFFF;
-    padding: 30px;
     border-radius: 8px;
-    width: 90%;
+    width: 100%; /* Растягиваем на всю ширину */
+    max-width: 1200px; /* Максимальная ширина */
+    padding: 30px; /* Отступы внутри контейнера */
+    box-sizing: border-box; /* Учитывать padding при расчете ширины */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
