@@ -7,14 +7,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh; /* Растягиваем фон на всю высоту */
+    min-height: 100vh;
 }
 
 /* Синяя полоса */
 .header {
     background-color: #008B8B;
     color: white;
-    text-align: center;
+    text-align: left; /* Выравниваем заголовки слева */
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
@@ -24,40 +24,25 @@ body {
 .content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #FFFFFF; /* Белый фон */
+    align-items: flex-start; /* Весь текст и элементы слева */
+    background-color: #FFFFFF;
     padding: 30px;
     border-radius: 8px;
-    max-width: 900px; /* Чтобы контент не растягивался слишком широко */
+    max-width: 900px;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для красоты */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 
 /* Фото */
-.personal-image {
-    width: 50%; /* На всю ширину контейнера */
-    height: auto; /* Сохранение пропорций */
-    display: block; /* Убирает лишние отступы */
-    margin-top: 20px; /* Отступ сверху */
-}
-
 .profile-image {
-    width: 3cm; /* Ширина 3 см */
-    height: 3cm; /* Высота 3 см */
-    border-radius: 50%; /* Оставляем круглую форму */
-    object-fit: cover; /* Обрезка, чтобы изображение не искажалось */
-    margin-left: 0; /* Выровняли по левому краю */
+    width: 3cm;
+    height: 3cm;
+    border-radius: 50%;
+    object-fit: cover;
     display: block;
-    margin-bottom: 10px; /* Отступ перед кругами */
+    margin-bottom: 10px;
 }
-
-/* Для адаптивности на маленьких экранах */
-@media (max-width: 480px) {
-    .profile-image {
-        width: 2.5cm; /* Уменьшаем на очень маленьких экранах */
-        height: 2.5cm;
-    }
 
 /* Левая колонка с текстом и фото */
 .left-column {
@@ -67,12 +52,12 @@ body {
     width: 100%;
 }
 
-/* Круги справа (в ряд) */
+/* Круги под фото */
 .right-column {
     display: flex;
-    gap: 20px; /* Отступы между кругами */
+    gap: 20px;
     flex-wrap: wrap;
-    justify-content: center; /* Центрируем круги */
+    justify-content: flex-start; /* Выравниваем круги слева */
     margin-top: 20px;
 }
 
@@ -87,18 +72,24 @@ body {
     justify-content: center;
 }
 
-/* WhatsApp иконка (исправленный размер) */
-.whatsapp-icon {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    margin-right: 5px;
+/* Заголовки слева */
+h1, h2, h3 {
+    text-align: left;
+    width: 100%;
 }
 
-/* Убираем маркеры списка */
-.no-dots {
+/* Убираем точки у списка */
+ul {
     list-style-type: none;
     padding-left: 0;
+}
+
+/* WhatsApp иконка (уменьшенный размер) */
+.whatsapp-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
 /* Контакты */
@@ -106,4 +97,12 @@ body {
     text-decoration: none;
     color: #008B8B;
     font-weight: bold;
+}
+
+/* Адаптивность для маленьких экранов */
+@media (max-width: 480px) {
+    .profile-image {
+        width: 2.5cm;
+        height: 2.5cm;
+    }
 }
