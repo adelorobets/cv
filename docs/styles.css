@@ -71,16 +71,6 @@ body {
     width: 100%;
 }
 
-.circle {
-    width: 80px;
-    height: 80px;
-    background-color: #008B8B;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /* === ЗАГОЛОВКИ === */
 h3 {
     text-align: left;
