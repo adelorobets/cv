@@ -1,4 +1,4 @@
-/* Основные стили */
+/* === ОСНОВНЫЕ СТИЛИ === */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,37 +7,45 @@ body {
     background-color: #B0E0E6; /* Голубой фон */
     display: flex;
     flex-direction: column;
-    align-items: stretch; /* Растянет дочерние элементы по ширине */
-    min-height: 100vh;  
-    max-width: none; /* Убираем возможное ограничение */
-}
-
-/* Синяя полоса */
-.header {
-    background-color: #008B8B;
-    color: white;
-    text-align: left; /* Выравниваем заголовки слева */
-    padding: 0px;
-    width: 100vw; /* Растянет на всю ширину экрана */
+    align-items: center; /* Центрирует контент по горизонтали */
+    min-height: 100vh;
     box-sizing: border-box;
 }
 
-/* Контейнер для ВСЕГО контента (Белый фон) */
+/* === СИНЯЯ ПОЛОСА === */
+.header {
+    background-color: #008B8B;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header h1,
+.header h2 {
+    margin: 0;
+    padding-left: 30px;
+    text-align: left;
+    width: 100%;
+}
+
+/* === КОНТЕНТ (белый фон) === */
 .content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Весь текст и элементы слева */
+    align-items: flex-start;
     background-color: #FFFFFF;
     border-radius: 8px;
-    width: 90%; /* Растягиваем на всю ширину */
-    max-width: 2500px; /* Максимальная ширина */
-    padding: 30px; /* Отступы внутри контейнера */
-    box-sizing: border-box; /* Учитывать padding при расчете ширины */
+    width: 90%;
+    max-width: 1200px;
+    padding: 30px;
+    box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin: 20px auto; /* Центрирование */
+    text-align: left;
 }
 
-/* Фото */
+/* === ФОТО === */
 .profile-image {
     width: 5cm;
     height: 5cm;
@@ -48,15 +56,14 @@ body {
 }
 
 .personal-image {
-    width: 10cm; /* Ширина */
-    height: 1cm; /* Высота */
-    object-fit: cover; /* Обрезка, чтобы изображение не искажалось */
+    width: 10cm;
+    height: 1cm;
+    object-fit: cover;
     display: block;
     margin-top: 10px;
 }
 
-
-/* Левая колонка с текстом и фото */
+/* === ЛЕВАЯ КОЛОНКА === */
 .left-column {
     display: flex;
     flex-direction: column;
@@ -64,18 +71,17 @@ body {
     width: 100%;
 }
 
-/* Круги под фото */
+/* === КРУГИ ПОД ФОТО === */
 .right-column {
     display: flex;
     gap: 20px;
-    justify-content: flex-start; /* Выравниваем круги слева */
-    color: white; /* Белый цвет текста */
-    text-decoration: none; /* Убираем подчеркивание */
+    justify-content: flex-start;
+    color: white;
+    text-decoration: none;
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
-/* Стили для кругов */
 .circle {
     width: 80px;
     height: 80px;
@@ -86,25 +92,19 @@ body {
     justify-content: center;
 }
 
-/* Заголовки слева */
-.header h1, .header h2 {
-    margin-left: 120px; /* Сдвигаем текст вправо */
-    text-align: left;
-    width: 100%;
-}
-
+/* === ЗАГОЛОВКИ === */
 h3 {
     text-align: left;
     width: 100%;
 }
 
-/* Убираем точки у списка */
+/* === СПИСКИ === */
 ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-/* WhatsApp иконка (уменьшенный размер) */
+/* === КОНТАКТЫ И ИКОНКИ === */
 .whatsapp-icon {
     width: 30px;
     height: 30px;
@@ -112,120 +112,24 @@ ul {
     margin-right: 5px;
 }
 
-/* Контакты */
 .contact-link {
     text-decoration: none;
     color: #008B8B;
     font-weight: bold;
 }
 
-/* Адаптивность для маленьких экранов */
-@media (max-width: 480px) {
-    .profile-image {
-        width: 2.5cm;
-        height: 2.5cm;
-    }
-
-/* Общие стили */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #B0E0E6; /* Голубой фон */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-}
-
-/* Синяя полоса (верхняя) */
-.header {
-    background-color: #008B8B;
-    color: white;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* Заголовок в синей полосе */
-.header h1 {
-    margin: 0;
-    padding-left: 30px; /* Сдвигаем заголовок вправо */
-    text-align: left;
-}
-
-/* Контейнер для страницы Portfolio */
-#portfolio-page {
-    background-color: #fff; /* Белый фон для контента */
-    padding: 30px;
-    margin-top: 20px;
-    width: 90%; /* Растягиваем почти на всю ширину */
-    max-width: 1200px; /* Максимальная ширина */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
-    border-radius: 8px;
-    text-align: left; /* Все элементы на странице выравниваем влево */
-}
-
-/* Внутренний контейнер для выравнивания контента */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Выравниваем элементы слева */
-    padding-left: 30px; /* Добавляем отступ слева */
-}
-
-/* Заголовки и текст */
-#portfolio-page h2, 
-#portfolio-page h3, 
-#portfolio-page p, 
-#portfolio-page ul, 
-#portfolio-page footer {
-    margin-left: 0; /* Все элементы начинаются с одной линии */
-    text-align: left;
-}
-
-/* Папки с документами */
-.folder {
-    background-color: #B0E0E6;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.folder h3 {
-    margin: 0;
-    color: white;
-}
-
-/* Список внутри папки */
-.folder ul {
-    padding-left: 20px;
-}
-
-.folder ul li {
-    font-size: 16px;
-}
-
-/* Стили для ссылок */
-#portfolio-page footer a {
-    color: #008B8B;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#portfolio-page footer a:hover {
-    text-decoration: underline;
-}
-
-/* Адаптивность */
+/* === АДАПТИВНОСТЬ === */
 @media (max-width: 768px) {
     .header h1 {
         padding-left: 15px;
     }
-    
-    .container {
-        padding-left: 15px;
+
+    .content {
+        padding: 20px;
+    }
+
+    .profile-image {
+        width: 2.5cm;
+        height: 2.5cm;
     }
 }
-
