@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    width: 90%;
+    width: 100%;
     background-color: #B0E0E6; /* Голубой фон */
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@ body {
     border-radius: 8px;
     width: 90%;
     max-width: 2000px;
-    padding: 30px;
+    padding: 20px;
     box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto; /* Центрирование */
